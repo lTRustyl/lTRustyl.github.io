@@ -1,0 +1,266 @@
+/* --- Reset & Pirate Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+    background-color: #fcfaf2;
+    color: #2c3539;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* --- Navigation Bar --- */
+header {
+    background-color: #1a252c; /* Deep Nautical Night */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 3px solid #d4af37; /* Pirate Gold Trim */
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fcfaf2;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d4af37; /* Gold accent */
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #a0aec0;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #d4af37;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-login {
+    color: #d4af37;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.btn-login:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.btn-signup {
+    background-color: #b22222; /* Crimson Red */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 4px;
+    border: 1px solid #7f1d1d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-signup:hover {
+    background-color: #991b1b;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: #121a1f; /* Absolute Deep Sea Black */
+    color: #fcfaf2;
+    text-align: center;
+    padding: 110px 20px;
+    border-bottom: 2px solid #2c3539;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fcfaf2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    color: #a0aec0;
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: #d4af37; /* Pirate Gold */
+    color: #121a1f;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #f3e5ab;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fcfaf2;
+    border: 1px solid #a0aec0;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 4px;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #d4af37;
+}
+
+/* --- Learning Paths Section --- */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.content-section h2 {
+    font-size: 34px;
+    color: #1a252c;
+    margin-bottom: 15px;
+}
+
+.content-section .subtitle {
+    color: #5a656b;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    width: 340px;
+    text-align: left;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    border-top: 6px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1a252c;
+}
+
+.card p {
+    color: #5a656b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.card .explore-link {
+    font-weight: 700;
+    font-size: 15px;
+    align-self: flex-start;
+}
+
+/* Pirate Card Accent Borders */
+.card-red { border-top-color: #b22222; }
+.card-red .explore-link { color: #b22222; }
+
+.card-blue { border-top-color: #2a52be; }
+.card-blue .explore-link { color: #2a52be; }
+
+.card-gold { border-top-color: #d4af37; }
+.card-gold .explore-link { color: #d4af37; }
+
+.explore-link:hover {
+    letter-spacing: 1px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1a252c;
+    border-top: 3px solid #d4af37;
+    padding: 35px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #a0aec0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.footer-socials a {
+    color: #a0aec0;
+}
+
+.footer-socials a:hover {
+    color: #d4af37;
+    transform: scale(1.2);
+}
+
+/* Responsive elements */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
