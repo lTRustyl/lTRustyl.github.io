@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* LEFT FIXED NAVBOX */
+.navbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #1f2937;
+    padding: 20px;
+    color: white;
+}
+
+.navbox h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.navbox a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #374151;
+    border-radius: 5px;
+}
+
+.navbox a:hover {
+    background: #2563eb;
+}
+
+/* MAIN CONTENT SHIFT (important for fixed sidebar) */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2563eb;
+}
+
+/* CARDS (like in CSS-2 examples) */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* LINKS */
+a {
+    color: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-left: 220px;
+    background: #111827;
+    color: white;
+}
