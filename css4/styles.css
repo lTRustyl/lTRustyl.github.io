@@ -1,0 +1,92 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        /* Custom Elegant Navbar */
+        .navbar-custom {
+            background-color: #0f172a !important;
+            padding: 0.8rem 1rem;
+        }
+        .navbar-custom .navbar-brand {
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #f8fafc;
+        }
+        .navbar-custom .nav-link {
+            color: #cbd5e1;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
+            color: #ffffff;
+        }
+        /* Jumbotron styling */
+        .hero-section {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 3.5rem 0;
+        }
+        /* Elevated Cards styling */
+        .custom-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            height: 100%;
+            overflow: hidden;
+        }
+        .custom-card-header {
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .header-blue { background-color: #eff6ff; color: #1e40af; }
+        .header-amber { background-color: #fffbeb; color: #92400e; }
+        .header-dark { background-color: #f8fafc; color: #0f172a; }
+        
+        /* Progress track */
+        .progress-slim {
+            height: 6px;
+            border-radius: 3px;
+            background-color: #f1f5f9;
+        }
+        /* Soft custom form inputs */
+        .form-control, .form-select {
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 0.6rem 0.75rem;
+            font-size: 0.95rem;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: #94a3b8;
+            box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.15);
+        }
+        /* Custom switches */
+        .form-check-input:checked {
+            background-color: #0f172a;
+            border-color: #0f172a;
+        }
+        /* Buttons styling */
+        .btn-dark-custom {
+            background-color: #0f172a;
+            color: #ffffff;
+            border-radius: 8px;
+            font-weight: 500;
+            padding: 0.5rem 1.25rem;
+        }
+        .btn-dark-custom:hover {
+            background-color: #1e293b;
+            color: #ffffff;
+        }
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        .btn-outline-custom:hover {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
