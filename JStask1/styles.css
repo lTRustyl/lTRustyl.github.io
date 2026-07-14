@@ -105,3 +105,24 @@ body {
 footer {
     background-color: #090d16;
 }
+
+.app-card p.text-muted {
+    color: #cbd5e1 !important;
+    font-size: 0.95rem;
+}
+
+.app-card .text-muted.small {
+    color: #ffffff !important; 
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#compareCount {
+    color: #fbbf24 !important;
+    font-size: 1.1rem;
+}
+
+#swapCount {
+    color: #ef4444 !important;
+    font-size: 1.1rem;
+}
