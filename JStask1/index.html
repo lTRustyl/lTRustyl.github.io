@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізатор Сортування</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-dark border-bottom border-secondary py-3" style="background-color: #0f172a;">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fw-bold text-white">🎛️ Sorting Visualizer</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="app-card p-4 shadow-lg h-100">
+                    <h3 class="fw-bold mb-4 text-white">Панель керування</h3>
+                    
+                    <div class="mb-4">
+                        <label class="form-label fw-medium text-slate-300">Оберіть алгоритм</label>
+                        <select id="algorithmSelect" class="form-select bg-dark text-white border-secondary">
+                            <option value="bubble">Сортування бульбашкою (Bubble Sort)</option>
+                            <option value="selection">Сортування вибором (Selection Sort)</option>
+                            <option value="insertion">Сортування вставками (Insertion Sort)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-medium text-slate-300">Розмір масиву: <span id="sizeValue" class="fw-bold">15</span></label>
+                        <input type="range" id="arraySize" class="form-range" min="5" max="30" value="15">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-medium text-slate-300">Швидкість анімації</label>
+                        <select id="speedSelect" class="form-select bg-dark text-white border-secondary">
+                            <option value="400">Повільно</option>
+                            <option value="200" selected>Нормально</option>
+                            <option value="50">Швидко</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button id="generateBtn" class="btn btn-outline-light py-2">Згенерувати новий масив</button>
+                        <button id="startBtn" class="btn btn-primary py-2 fw-semibold">Запустити сортування</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Візуалізація -->
+            <div class="col-lg-8">
+                <div class="app-card p-4 shadow-lg h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="fw-bold mb-2 text-white">Процес сортування</h3>
+                        <p class="text-muted small mb-4">Жовтий колір — елементи порівнюються. Червоний — змінюються місцями. Зелений — успішно відсортовано.</p>
+                    </div>
+
+                    <!-- Контейнер для стовпчиків -->
+                    <div id="visualizer" class="visualizer-container my-3"></div>
+
+                    <div class="d-flex justify-content-between text-muted small mt-3 border-top border-secondary pt-3">
+                        <span>Операцій порівняння: <strong id="compareCount" class="text-white">0</strong></span>
+                        <span>Операцій обміну: <strong id="swapCount" class="text-white">0</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-muted py-4 border-top border-secondary" style="background-color: #0d131f;">
+        <div class="container">
+            <small>&copy; 2026 Sorting Visualizer. Написано на чистому JavaScript & Bootstrap 5.</small>
+        </div>
+    </footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
