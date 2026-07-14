@@ -14,13 +14,21 @@ body {
     border-radius: 16px;
 }
 
+.text-slate-300 {
+    color: #cbd5e1 !important;
+}
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
 .visualizer-container {
     height: 300px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     gap: 4px;
-    background-color: #0f172a;
+    background-color: #090d16;
     border: 1px solid #334155;
     border-radius: 12px;
     padding: 16px;
@@ -54,4 +62,46 @@ body {
 
 .bar.sorted {
     background-color: #10b981 !important;
+}
+
+.form-select.bg-dark {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #475569 !important;
+}
+
+.form-select.bg-dark:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #334155;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #3b82f6;
+}
+
+.form-select.bg-dark {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #475569 !important;
+}
+
+.form-select.bg-dark:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #334155;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #3b82f6;
+}
+
+footer {
+    background-color: #090d16;
 }
